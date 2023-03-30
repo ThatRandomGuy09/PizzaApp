@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../styles/Navbar.module.css"
 
 const NavBar = () => {
@@ -18,7 +18,7 @@ const NavBar = () => {
         <li className={styles.listItem}>HomePage</li>
         <li className={styles.listItem}>Products</li>
         <li className={styles.listItem}>Menu</li>
-        <Image src="/img/Logo.jpg" alt="" width="170" height="80" priority={false}/>
+        <Image src="/img/Logo.jpg" alt="" width="170" height="80"/>
         <li className={styles.listItem}>Events</li>
         <li className={styles.listItem}>Blog</li>
         <li className={styles.listItem}>Contacts</li>

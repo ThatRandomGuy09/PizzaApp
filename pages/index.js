@@ -1,12 +1,15 @@
+import Products from '@/components/Products'
+import Slider from '@/components/Slider'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
+import styles from "../styles/Home.module.css"
 
 
 
 
 export default function Home() {
   return (
-   <div >
+   <div className={styles.container}>
       <Head>
         <title>PizzaApp</title>
         <meta name="description" content="PizzaShop" />
@@ -14,7 +17,10 @@ export default function Home() {
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
 
-      <slider/>
+      <Slider/>
+      <Products/>
+      
+      
 
       </div>
     

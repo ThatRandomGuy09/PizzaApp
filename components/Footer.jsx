@@ -1,13 +1,60 @@
+import styles from "../styles/Footer.module.css"
+import Image from "next/legacy/image";
+
 const Footer = () => {
 
     return(
-        <div>
-        footer        
+        <div className={styles.container}>
+        <div className={styles.item}>
+        <Image src="/img/bg.png" alt="" width={600} height={500}/>
+        
+        </div>
+        <div className={styles.item}>
+        <div className={styles.card}>
+        <h2 className={styles.motto}>The Best Pizza Under One Roof</h2>
+        </div>
+        <div className={styles.card}>
+        <h1 className={styles.title}>Find Our Shop</h1>
+        <p className={styles.text}>
+        42/43 Kumbha Marg, Random Address Street, 
+        <br/> Jaipur, 395008
+        <br/> 789456123
+        </p>
+        <p className={styles.text}>
+            2356 K. Laquie Rd #235.
+            <br /> NewYork, 85022
+            <br /> (602) 867-1011
+          </p>
+          <p className={styles.text}>
+            1614 E. Erwin St #104.
+            <br /> NewYork, 85022
+            <br /> (602) 867-1012
+          </p>
+          <p className={styles.text}>
+            1614 W. Caroll St #125.
+            <br /> NewYork, 85022
+            <br /> (602) 867-1013
+          </p>
+        </div>
+        <div className={styles.card}>
+        <h1 className={styles.title}>Working Hours</h1>
+
+        <p className={styles.text}>
+            MONDAY UNTIL FRIDAY
+            <br /> 9:00 AM - 10:00 PM
+          </p>
+          <p className={styles.text}>
+            SATURDAY - SUNDAY
+            <br /> 12:00 PM - 12:00 AM
+          </p>
+        </div>
+               
+        </div>
         </div>
     )
     
     
     
-    }
+    };
     
     export default Footer;
