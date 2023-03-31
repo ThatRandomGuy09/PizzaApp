@@ -1,4 +1,4 @@
-import Products from '@/components/Products'
+import Products from '@/components/PizzaList'
 import Slider from '@/components/Slider'
 import Head from 'next/head'
 import Image from 'next/legacy/image'

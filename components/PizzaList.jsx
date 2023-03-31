@@ -1,5 +1,5 @@
 import styles from "../styles/Products.module.css"
-import Card from './Card';
+import Card from './PizzaCard';
 
 const Products =()=>{
 
