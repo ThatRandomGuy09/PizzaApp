@@ -25,7 +25,7 @@ const Slider = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.arrowContainer} style={{left:0}} objectFit="contain" onClick={()=>handleArrow("l")}>
+      <div className={styles.arrowContainer} style={{left:0}} objectfit="contain" onClick={()=>handleArrow("l")}>
         <Image src="/img/arw.png" alt=""  height={100} width={100}/>
       </div>        
       <div className={styles.wrapper} style={{transform:`translateX(${-100*index}vw)`}}>        
@@ -35,7 +35,7 @@ const Slider = () => {
           </div>
         ))}      
       </div>
-      <div className={styles.arrowContainer} style={{right:0}} objectFit="contain" onClick={()=>handleArrow("r")}>
+      <div className={styles.arrowContainer} style={{right:0}} objectfit="contain" onClick={()=>handleArrow("r")}>
         <Image src="/img/arrowr.png" alt=""  height={100} width={100}  />
       </div>
     </div>
